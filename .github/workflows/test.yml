@@ -1,0 +1,11 @@
+name: Test EKS Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: eks-runner
+    steps:
+      - name: Hello World
+        run: echo "Hello from EKS Runner!"
